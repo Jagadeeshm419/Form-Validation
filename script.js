@@ -76,16 +76,17 @@ function setError(element, message){
     const errorElement = main.querySelector(".error")
     errorElement.innerText = message;
 
-    main.className = 'main error';
-    
+    main.classList.add("error")
+    main.classList.remove("success")   
 }
 
 function setSuccess(element){
     const main  = element.parentElement;
     const errorElement = main.querySelector(".error")
     errorElement.innerText = '';
-    
-    main.className = 'main success';
+
+    main.classList.add("success")    
+    main.classList.remove("error")
 }
 
 const validateEmail = (email) => {

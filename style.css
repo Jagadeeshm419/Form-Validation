@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(1,51,141,1) 0%, rgba(1,147,170,1) 43%, rgba(0,241,255,1) 100%, rgba(70,22,191,1) 100%);
+    font-family: sans-serif;
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #ffff;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 10px 20px 25px black;
+    max-width: 100%;
+    width: 400px;
+}
+
+h1{
+    border-bottom: 1px solid silver;
+    background-color:azure;
+    color : rgba(1,147,170,1);
+    padding: 20px 40px;
+    margin: 0;
+    text-align: center;
+}
+
+#form{
+    padding: 30px 40px;
+}
+
+.main{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.main input{
+    display: block;
+    border: 2px solid #f0f0f0;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    transition: .3s;
+}
+
+.main input:focus{
+    outline: none;
+    border-color: rgba(1,147,170,1);
+}
+
+.main i{
+    visibility: hidden;
+    position: absolute;
+    top : 35px;
+    right: 10px;
+}
+
+.main.success i.fa-circle-check{
+    color : #2ecc71;
+    visibility: visible;
+}
+
+.main.error i.fa-circle-exclamation{
+    color : rgb(233, 45, 45);
+    visibility: visible;
+}
+
+.main.error {
+    font-size: 14px;
+    color:rgb(233, 45, 45);
+    margin-top: 5px;
+} 
+
+.main.success input{
+    border-color: #2ecc71;
+}
+
+.main.error input{
+    border-color: rgb(233, 45, 45);
+}
+
+#form button{
+    background: rgba(1,147,170,1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    cursor: pointer;
+}

@@ -76,7 +76,7 @@ h1{
     visibility: visible;
 }
 
-.main.error {
+.main .error {
     font-size: 14px;
     color:rgb(233, 45, 45);
     margin-top: 5px;
